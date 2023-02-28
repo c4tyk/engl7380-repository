@@ -1,10 +1,10 @@
 # Research Log
 
-## January 19th 2023
+## January 19th, 2023
 
 Today I set up my GitHub Repository.
 
-## February 16th 2023 - Datasets Description 
+## February 16th, 2023 - Datasets Description 
 
 I have uploaded two fan-made datasets related to the choose-your-own-adventure-style visual novel app Choices: Stories You Play. One of them contains the view counts and provided keywords for each story available in the Choices app. I copied it from the Choices Wiki Statistics page and pasted it into Excel so that I could save it as a .csv file. The other dataset contains the “diamond” costs for each Choices story. The diamond costs dataset was created by a fan and uploaded to the Choices subreddit (r/choices). I also copied it into an Excel sheet and saved it as a .csv file. 
 
@@ -13,3 +13,25 @@ The columns organizing the values in this dataset are “Book Name,” “Views,
 
 Choices Diamond Costs Dataset: https://www.reddit.com/r/Choices/comments/ixskc4/to_save_or_not_to_save_diamonds_edition_no/ 
 Every Choices story has exclusive scenes, character outfits and hairstyles, which cost “diamonds” to unlock. Players can purchase diamonds or receive them as rewards from reading new chapters, completing books, and watching ads. Using information from the Choices Wiki, a fan calculated the total number of diamond costs for each book and broke down the costs according to various categories. The columns in this dataset are “Book Title,” “Total Diamonds,” “Outfits With Effects,” “Outfits/Hair No Effect,” “LI’s With Effect,” “LI’s No Effect,” “Other With Effect,” and “Other No Effect.” “LI” means ‘love interest,’ referring to the characters with whom the main character can pursue romantic relationship routes if the player chooses. “With Effects” refers to stories with an approval rating that can affect the outcome of the story. Approval ratings may relate to relationships the player has forged with other characters depending on their choices or more general storyline approval that relates to another aspect of the plot. The books that had not finished releasing chapters at the time this dataset was made were left blank. This dataset was created two years ago and has not been updated since, so there are many values that could be added to the existing columns. 
+
+## February 28th, 2023 - Data Gaps and Proposals for Filling Them 
+
+Wiki Stats Dataset: 
+•	Key words and genre: The keywords listed for each book provide hints about their genres, but the dataset does not specify them. However, the Choices app has a page that sorts some of the books by genre. To expand the dataset, I could potentially add a “genre” column using the genre designation given by the app for some books and using the keywords to make inferences about books without a listed genre. I could also look at the Wiki pages for each book, which tend to list a genre (although that genre is often simply “romance”). To expand the dataset in this way, I would need to decide how to define “genre” and would probably end up with more than one genre value for many books. Moreover, I could split the “Keywords” column into “Keyword 1,” “Keyword 2,” and “Keyword 3” as that organization seems more logical and easier to follow than its current format. 
+
+•	Dates: While the Choices Wiki pages list the start and end dates for each book’s release, this information is not included in either of the datasets with which I am working. Thus, I could use the information from the Wiki pages to add “Release Start Date” and “Release End Date” columns to the dataset. Perhaps I could also use this information to calculate the release time for each book and add a “Release Time” column. Alternatively, I could simplify this information by creating a "Release Year" column and including only the years for each release (although I do not see a good reason for taking that approach). 
+
+•	Series vs. stand-alone: Whether a Choices book receives a sequel or becomes an ongoing series is a major point of discussion within the fandom. Thus, I think it could be useful for this dataset to include information about whether the books are single releases or part of a series. I could obtain this information from either the Choices app or the Wiki. However, I am unsure of the best way to organize this information in the dataset. I could have a column with values that list the book as a stand-alone or part of a series, and I could possibly add another column that specifies what number a book is within its series (or I could try to combine this information into one column), but I do not know if that would be the most effective way to go about it. 
+
+•	Gender: This dataset does not include any information about the books’ characters. Whether the main characters that readers play as for each book are gender of choice or locked as a specific gender is a major area of contention between fans and the story creators. So, I could add a column that specifies whether or not the main characters are gender locked, perhaps by adding a “Main Character’s Gender” column. Also, I could add another column to include information about the pronoun options offered for gender-of-choice books since they only recently began including they/them pronouns.
+
+•	Love interest characters: Since there is no information about book characters in this dataset, I think it would be interesting to compile information about the number of love interest characters in each book, the genders of each love interest, and whether their genders/names/appearances are customizable. However, doing so would be time consuming since I would have to search the Wiki page for each book to obtain this information. 
+
+•	View Counts: As I mentioned in my last research log entry, not even the creators of this dataset know how the view count values were calculated since the Choices app did not specify what it considered a “view.” If I knew a “view” was in this context and somehow obtained more complete information on it, I could potentially break down this category further by separating unique views from replays, or I could divide the view counts by completed books and/or chapters versus views that may have come from someone starting a book/chapter and not finishing it. 
+
+Diamond Costs Dataset: 
+•	Number of chapters: Using information obtained from either the app or the Wiki pages, I could add a column to this dataset that lists the number of chapters in each book. One could then use that information to calculate the average diamond cost per chapter for any given book since the original dataset includes the total number of diamond costs for each book.
+
+•	Number of diamond scenes: The Choices walkthrough Wiki pages list every diamond scene that appears in a book. I could use that information to calculate the total number of diamond scene options that appear in each book and add a “Number of Diamond Scenes” column to the dataset (although doing so would probably take a long time). One could then use this information to calculate the average cost of a diamond scene for a given book. 
+
+•	“Other” categories: I think I could break down the two “other” categories in this dataset to make them more specific. However, doing so would require researching extensively the situations where diamond scenes have no effect on the story or character relationships. I would then have to determine how to categorize these situations into categories more specific than “other” but still general enough to encompass multiple values, which would be a lot of work. 
