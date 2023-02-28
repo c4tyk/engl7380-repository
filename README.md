@@ -17,6 +17,7 @@ Every Choices story has exclusive scenes, character outfits and hairstyles, whic
 ## February 28th, 2023 - Data Gaps and Proposals for Filling Them 
 
 Wiki Stats Dataset: 
+
 •	Key words and genre: The keywords listed for each book provide hints about their genres, but the dataset does not specify them. However, the Choices app has a page that sorts some of the books by genre. To expand the dataset, I could potentially add a “genre” column using the genre designation given by the app for some books and using the keywords to make inferences about books without a listed genre. I could also look at the Wiki pages for each book, which tend to list a genre (although that genre is often simply “romance”). To expand the dataset in this way, I would need to decide how to define “genre” and would probably end up with more than one genre value for many books. Moreover, I could split the “Keywords” column into “Keyword 1,” “Keyword 2,” and “Keyword 3” as that organization seems more logical and easier to follow than its current format. 
 
 •	Dates: While the Choices Wiki pages list the start and end dates for each book’s release, this information is not included in either of the datasets with which I am working. Thus, I could use the information from the Wiki pages to add “Release Start Date” and “Release End Date” columns to the dataset. Perhaps I could also use this information to calculate the release time for each book and add a “Release Time” column. Alternatively, I could simplify this information by creating a "Release Year" column and including only the years for each release (although I do not see a good reason for taking that approach). 
@@ -30,6 +31,7 @@ Wiki Stats Dataset:
 •	View Counts: As I mentioned in my last research log entry, not even the creators of this dataset know how the view count values were calculated since the Choices app did not specify what it considered a “view.” If I knew a “view” was in this context and somehow obtained more complete information on it, I could potentially break down this category further by separating unique views from replays, or I could divide the view counts by completed books and/or chapters versus views that may have come from someone starting a book/chapter and not finishing it. 
 
 Diamond Costs Dataset: 
+
 •	Number of chapters: Using information obtained from either the app or the Wiki pages, I could add a column to this dataset that lists the number of chapters in each book. One could then use that information to calculate the average diamond cost per chapter for any given book since the original dataset includes the total number of diamond costs for each book.
 
 •	Number of diamond scenes: The Choices walkthrough Wiki pages list every diamond scene that appears in a book. I could use that information to calculate the total number of diamond scene options that appear in each book and add a “Number of Diamond Scenes” column to the dataset (although doing so would probably take a long time). One could then use this information to calculate the average cost of a diamond scene for a given book. 
