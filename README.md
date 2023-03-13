@@ -16,7 +16,7 @@ Every _Choices_ story has exclusive scenes, character outfits and hairstyles, wh
 
 ## February 28th, 2023 - Data Gaps and Proposals for Filling Them 
 
-**Wiki Stats Dataset: **
+**Wiki Stats Dataset:**
 
 •	**Key words and genre:** The keywords listed for each book provide hints about their genres, but the dataset does not specify them. However, the _Choices_ app has a page that sorts some of the books by genre. To expand the dataset, I could potentially add a “genre” column using the genre designation given by the app for some books and using the keywords to make inferences about books without a listed genre. I could also look at the Wiki pages for each book, which tend to list a genre (although that genre is often simply “romance”). To expand the dataset in this way, I would need to decide how to define “genre” and would probably end up with more than one genre value for many books. Moreover, I could split the “Keywords” column into “Keyword 1,” “Keyword 2,” and “Keyword 3” as that organization seems more logical and easier to follow than its current format. 
 
@@ -24,13 +24,13 @@ Every _Choices_ story has exclusive scenes, character outfits and hairstyles, wh
 
 •	**Series vs. stand-alone:** Whether a _Choices_ book receives a sequel or becomes an ongoing series is a major point of discussion within the fandom. Thus, I think it could be useful for this dataset to include information about whether the books are single releases or part of a series. I could obtain this information from either the _Choices_ app or the Wiki. However, I am unsure of the best way to organize this information in the dataset. I could have a column with values that list the book as a stand-alone or part of a series, and I could possibly add another column that specifies what number a book is within its series (or I could try to combine this information into one column), but I do not know if that would be the most effective way to go about it. 
 
-•	**Gender: ** This dataset does not include any information about the books’ characters. Whether the main characters that readers play as for each book are gender of choice or locked as a specific gender is a major area of contention between fans and the story creators. So, I could add a column that specifies whether or not the main characters are gender locked, perhaps by adding a “Main Character’s Gender” column. Also, I could add another column to include information about the pronoun options offered for gender-of-choice books since they only recently began including they/them pronouns.
+•	**Gender:** This dataset does not include any information about the books’ characters. Whether the main characters that readers play as for each book are gender of choice or locked as a specific gender is a major area of contention between fans and the story creators. So, I could add a column that specifies whether or not the main characters are gender locked, perhaps by adding a “Main Character’s Gender” column. Also, I could add another column to include information about the pronoun options offered for gender-of-choice books since they only recently began including they/them pronouns.
 
 •	**Love interest characters:** Since there is no information about book characters in this dataset, I think it would be interesting to compile information about the number of love interest characters in each book, the genders of each love interest, and whether their genders/names/appearances are customizable. However, doing so would be time consuming since I would have to search the Wiki page for each book to obtain this information. 
 
 •	**View counts:** As I mentioned in my last research log entry, not even the creators of this dataset know how the view count values were calculated since the _Choices_ app did not specify what it considered a “view.” If I knew a “view” was in this context and somehow obtained more complete information on it, I could potentially break down this category further by separating unique views from replays, or I could divide the view counts by completed books and/or chapters versus views that may have come from someone starting a book/chapter and not finishing it. 
 
-**Diamond Costs Dataset: **
+**Diamond Costs Dataset:**
 
 •	**Number of chapters:** Using information obtained from either the app or the Wiki pages, I could add a column to this dataset that lists the number of chapters in each book. One could then use that information to calculate the average diamond cost per chapter for any given book since the original dataset includes the total number of diamond costs for each book.
 
@@ -40,7 +40,7 @@ Every _Choices_ story has exclusive scenes, character outfits and hairstyles, wh
 
 ## March 13th, 2023 - Filling a Data Gap
 
-**Wiki Stats Dataset: **
+**Wiki Stats Dataset:**
 
 To fill data gaps in the _Choices_ Wiki Stats dataset, I added columns to indicate the release year and the gender of the main character--the character from whose point-of-view the reader plays--for each book. To do so, I added “MC’s Gender” and “Release Year” columns. There are two possible values for the “MC’s Gender” column: female or gender-of-choice (GOC). While many books are gender-locked as female, meaning one can play the book only as a female character, none of them are gender-locked as male. Thus, books that are not gender-locked as female are listed as GOC. Additionally, some of the values in the “Release Year” column list more than one year (e.g., 2020-2021), indicating that the book began releasing chapters in the first year listed and finished the following year. To obtain information about the main characters’ genders and book release years to add to the dataset, I consulted the individual Wiki walkthrough pages for each book. For some of the books I have played before, I relied on memory and did not have to look at the Wiki when inputting the gender, but I did double-check the year values using the Wiki page for all of them. I also changed the “Keywords” column to three separate columns, “Keyword 1,” “Keyword 2,” and “Keyword 3,” because I find it easier to read in that format. 
 
@@ -48,7 +48,7 @@ Whether a book is gender-locked or gender-of-choice is an area of contention bet
 
 Moreover, some (albeit very few) of the GOC books allow the player to make their character non-binary. Currently, I have categorized these books as “GOC” without indicating the option for non-binary characters. To indicate whether a GOC book allows for non-binary characters, I could add a fourth value, such as “GOC + NB.” However, because there are so few books that allow non-binary main characters and the decision to add non-binary main character options occurred only in the last year or so, I decided to leave “GOC” as an umbrella term that encompasses both these books and GOC books that adhere to the gender binary. I believe that adding a value to indicate which books allow non-binary main character options would be more useful in the future after the app releases more of these books. 
 
-**Diamond Cost Dataset: **
+**Diamond Cost Dataset:**
 
 To expand the _Choices_ Diamond Cost dataset, I added a “Chapters” column, which indicates the number of chapters in each book. I obtained this information from the books’ Wiki pages and the _Choices_ app itself, switching between these two mediums depending on what seemed more convenient as I worked. I chose to add this column because one could use it along with the “Total Diamonds” column to calculate the average diamond cost for each chapter of a given book, which could be useful to fans trying to budget their diamonds or determine roughly how many they would need to buy all the diamond scenes in one chapter of a certain book. 
 
